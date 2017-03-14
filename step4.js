@@ -15,15 +15,15 @@ function getHTML (options, callback) {
     });
 
     response.on('end', function() {
-      console.log(space.join(""));
+      callback(space.join(""));
     });
-  }); return getHTML;
-
+  });
 }
 
 
 function printHTML (html) {
-  console.log(html);
+      console.log(html);
+
 }
 
 var requestOptions = {
